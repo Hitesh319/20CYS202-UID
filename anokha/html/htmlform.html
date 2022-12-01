@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anokha Tech Event 2023</title>
+<center>    <style>
+      
+       html {
+  height: 100%;
+}
+
+:root {
+    --bg1:#1f65e6;
+  --bg2:#acc0d5;
+}
+  body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(var(--bg1), var(--bg2));
+}
+     
+      header {
+        color:black;
+        
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1><b><i>Welcome to Anokha Tech Event 2023</i></b></h1>
+
+    </header>
+
+  <main>  
+    
+<form id="event-registration-form" method="POST" action="">
+      <!-- Form contents will go here -->
+
+   
+  
+      <fieldset>
+        <h3>Student Information for Registeration </h3>
+        <label> Firstname </label>         
+<input type="text" id="firstname" onchange="NameCheck()" size="15"/> <br> <br>  
+<label> Middlename: </label>     
+<input type="text" name="middlename" size="15"/> <br> <br>  
+<label> Lastname: </label>         
+<input type="text" name="lastname" size="15"/> <br> <br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" onchange="ValidateEmail()" /><br>
+   <br>
+        <label>   
+Course :  
+</label>   
+<select>  
+<option value="---Course---">---Course---</option>  
+<option value="CYS">CYS</option>  
+<option value="CSE">CSE</option>  
+<option value="AI">AI</option>  
+<option value="ECE">ECE</option>  
+<option value="EEE">EEE</option>  
+<option value="Mech">Mech</option>  
+</select>  
+  <br>  
+<br> 
+<lable>
+How you got to know about Anokha Event 2023?
+</lable><br>
+ <input type="checkbox" name=''>Students<br>
+<input type="checkbox" name=''>Ad<br>
+<input type="checkbox" name=''>Mail<br>
+<input type="checkbox" name=''>Amrita Intranet<br>
+<input type="checkbox" name=''>Others
+
+<br><br>
+
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" name="male"/> Male  
+<input type="radio" name="female"/> Female  
+<input type="radio" name="other"/> Other  
+<br>  
+<br>  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code"  value="+91" size="2"/>   
+<input type="text" name="phonenumber" onchange="PhoneNumberCheck()" size="10"/> <br> <br>  
+Address:  
+<br>  
+<textarea cols="80" rows="5" value="address">  
+</textarea>  
+<br> <br>  
+<label for="dateofreg">Date of register:</label>
+           <input type="date" id="dateofreg" name="dateofreg">
+           <input type="submit" value="Submit"><br><br>
+
+          
+
+           Upload Document for verification:
+           <br>
+           <input type="file" id="myfile" name="myfile">
+           <br><br>  
+Password:  
+<input type="Password" id="pass" name="pass"> <br>   
+<br>
+Re-type password:  
+<input type="Password" id="repass" name="repass"> <br><br>
+
+</form>
+<script src="./script.js">
+</script> 
+<style>
+   form{
+    font-size: 1.1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+  
+  }
+   
+       .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  top: 2px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+</style>
+
+<lable>Click to enable notifications!!</lable>
+<label class="switch">
+  <input type="checkbox" check>
+  <span class="slider round"></span>
+</label> 
+
+      </fieldset>
+      <br>
+      <button>Register</button>
+      <a href="C:\Users\hites\Desktop\USER INTERFACE\anokha\index.html"><button>Login</button></a>
+      </center>
+<br><br>
+  </div>
+</head>
+
+<body>
+</body>
+
+</html>
